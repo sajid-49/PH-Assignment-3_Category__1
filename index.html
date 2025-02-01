@@ -8,12 +8,23 @@
     <!-- Link to Favicon -->
     <link
       rel="shortcut icon"
-      href="/c1-assets/logo-header.png"
+      href="/assets/logo-header.png"
       type="image/x-icon"
     />
 
-    <!-- Link to TailWind CDN -->
+    <!-- Link to TailWind and customizing CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
 
     <!-- Link to DaisyUi CDN -->
     <link
@@ -48,7 +59,59 @@
     </style>
   </head>
   <body class="font1">
-    <header></header>
+    <header>
+      <!-- Nav section -->
+      <nav
+        class="bg-[#FFF9F4] pt-6 pb-6 max-w-screen-xl xl:mx-auto border-b-2 border-black md:border-0"
+      >
+        <div class="navbar">
+          <!-- nav start -->
+          <div class="navbar-start">
+            <div class="flex items-center gap-3">
+              <div>
+                <img src="/assets/logo-header.png" alt="dog footprint" />
+              </div>
+              <h3 class="text-2xl hidden md:block">
+                Browse<span class="text-[#FFDC26]">4</span>Pets
+              </h3>
+            </div>
+          </div>
+
+          <!-- nav center -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+
+          <!-- nav end -->
+          <div class="navbar-end gap-3">
+            <i class="fa-solid fa-bars block md:hidden text-4xl"></i>
+            <div class="hidden md:block flex gap-3">
+              <i class="fa-regular fa-bell text-2xl"></i>
+              <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            </div>
+
+            <button
+              class="px-7 py-2 border border-[#FFDC26] rounded-xl bg-[#FFF9F4] text-xl text-black hidden md:block"
+            >
+              Login
+            </button>
+
+            <button
+              class="px-7 py-2 border-0 rounded-xl bg-[#FFDC26] text-xl text-black hidden md:block"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner section -->
+      <div class="max-w-screen-xl xl:mx-auto"></div>
+    </header>
 
     <main></main>
 
