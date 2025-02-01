@@ -13,6 +13,7 @@
     />
 
     <!-- Link to TailWind and customizing CDN -->
+    <!-- ! Color use kora jache na -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -20,6 +21,10 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              accent: "#FFDC26",
+              primary: "#FFFFFF",
+              secondary: "#FFF9F4",
+              text: "#111111",
             },
           },
         },
@@ -32,7 +37,6 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Link to Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -89,10 +93,10 @@
           <!-- nav end -->
           <div class="navbar-end gap-3">
             <i class="fa-solid fa-bars block md:hidden text-4xl"></i>
-            <div class="hidden md:block flex gap-3">
-              <i class="fa-regular fa-bell text-2xl"></i>
-              <i class="fa-solid fa-magnifying-glass text-2xl"></i>
-            </div>
+            <i class="fa-regular fa-bell text-2xl hidden md:block"></i>
+            <i
+              class="fa-solid fa-magnifying-glass text-2xl hidden md:block"
+            ></i>
 
             <button
               class="px-7 py-2 border border-[#FFDC26] rounded-xl bg-[#FFF9F4] text-xl text-black hidden md:block"
@@ -110,10 +114,120 @@
       </nav>
 
       <!-- Banner section -->
-      <div class="max-w-screen-xl xl:mx-auto"></div>
+      <div
+        class="max-w-screen-xl mt-20 mb-32 w-[97vw] md:w-auto h-[450px] md:h-[650px] mx-auto bg-bottom bg-[url('./assets/cat-big.png')] bg-contain bg-no-repeat"
+      >
+        <div>
+          <h1 class="mb-4 font2 text-3xl md:text-5xl">
+            Pamper Your Pet, <br />
+            Because They Deserve <br />
+            the Bes
+          </h1>
+          <p class="mb-6 text-base md:text-xl text-gray-500">
+            Discover a world of treats, toys, and essentials handpicked for
+            <br />
+            your furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button
+            class="px-7 py-2 border-0 rounded-xl bg-[#FFDC26] text-xl text-black"
+          >
+            Find a pet
+          </button>
+        </div>
+      </div>
     </header>
 
-    <main></main>
+    <main>
+      <!-- Categories section -->
+      <section class="max-w-screen-xl mx-auto mb-14 md:mb-28">
+        <h2 class="font2 text-4xl mb-[50px]">Browse By Categories</h2>
+        <!-- Cards container -->
+        <div
+          class="w-[97vw] max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
+        >
+          <!-- Card1 -->
+          <div
+            class="bg-[#F9DF8A] lg:w-[200px] lg:h-[250px] rounded-xl flex flex-col justify-center items-center gap-5"
+          >
+            <div
+              class="h-[104px] w-[104px] flex items-center justify-center rounded-full bg-white"
+            >
+              <img src="./assets/dog-cartoon.png" alt="" />
+            </div>
+            <h3 class="font2 text-xl text-center">Dog</h3>
+            <p class="text-center">3 items</p>
+          </div>
+
+          <!-- Card2 -->
+          <div
+            class="bg-[#F9DF8A] lg:w-[200px] lg:h-[250px] rounded-xl flex flex-col justify-center items-center gap-5"
+          >
+            <div
+              class="h-[104px] w-[104px] flex items-center justify-center rounded-full bg-white"
+            >
+              <img src="./assets/fish-cartoon.png" alt="" />
+            </div>
+            <h3 class="font2 text-xl text-center">Dog</h3>
+            <p class="text-center">3 items</p>
+          </div>
+
+          <!-- Card3 -->
+          <div
+            class="bg-[#F9DF8A] lg:w-[200px] lg:h-[250px] rounded-xl flex flex-col justify-center items-center gap-5"
+          >
+            <div
+              class="h-[104px] w-[104px] flex items-center justify-center rounded-full bg-white"
+            >
+              <img src="./assets/cat-cartoon.png" alt="" />
+            </div>
+            <h3 class="font2 text-xl text-center">Dog</h3>
+            <p class="text-center">3 items</p>
+          </div>
+
+          <!-- Card4 -->
+          <div
+            class="bg-[#F9DF8A] lg:w-[200px] lg:h-[250px] rounded-xl flex flex-col justify-center items-center gap-5"
+          >
+            <div
+              class="h-[104px] w-[104px] flex items-center justify-center rounded-full bg-white"
+            >
+              <img src="./assets/bird-cartoon.png" alt="" />
+            </div>
+            <h3 class="font2 text-xl text-center">Dog</h3>
+            <p class="text-center">3 items</p>
+          </div>
+
+          <!-- Card5 -->
+          <div
+            class="bg-[#F9DF8A] lg:w-[200px] lg:h-[250px] rounded-xl flex flex-col justify-center items-center gap-5"
+          >
+            <div
+              class="h-[104px] w-[104px] flex items-center justify-center rounded-full bg-white"
+            >
+              <img src="./assets/mouse-cartoon.png" alt="" />
+            </div>
+            <h3 class="font2 text-xl text-center">Dog</h3>
+            <p class="text-center">3 items</p>
+          </div>
+
+          <!-- Card6 -->
+          <div
+            class="bg-[#F9DF8A] lg:w-[200px] lg:h-[250px] rounded-xl flex flex-col justify-center items-center gap-5"
+          >
+            <div
+              class="h-[104px] w-[104px] flex items-center justify-center rounded-full bg-white"
+            >
+              <img src="./assets/rabbit-cartoon.png" alt="" />
+            </div>
+            <h3 class="font2 text-xl text-center">Dog</h3>
+            <p class="text-center">3 items</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending section -->
+      <section class="max-w-screen-xl mx-auto"></section>
+    </main>
 
     <footer></footer>
   </body>
